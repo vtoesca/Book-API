@@ -2,7 +2,7 @@ Books
 =====
 
 A Simple Book Retrieval API
-<img align="right" height="260" src="https://raw.githubusercontent.com/DevTestSolutions/Link-API/master/Puzzle.png">
+<img align="right" height="260" src="https://raw.githubusercontent.com/DevTestSolutions/Book-API/master/Book.png">
 Find a good book!
 
 This simple sample provides a basic Book API option as well as a more advanced (but only mildly) option.
