@@ -38,8 +38,8 @@ version: 1
             application/json:
               example: |
                 {
-                  "title" : "Moby Dick",
-                  "author" : "The Author"
+                  "title" : "{title}",
+                  "author" : "{{=[:First Name:]}} {{=[:Middle Initial:]}} {{=[:Last Name:]}}"
                 }
     delete:
       description: Deletes the specified book
