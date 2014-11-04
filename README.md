@@ -1,4 +1,4 @@
-Books
+Book API
 =====
 
 A Simple Book Retrieval API
