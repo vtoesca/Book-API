@@ -1,0 +1,27 @@
+#%RAML 0.8
+
+#baseUri: http://server/api/{version}
+baseUri: https://vapi.ca.com/
+version: 1
+
+/books:
+  displayName: Books
+  get:
+    description: Returns a list of all books
+  post:
+    description: Adds a book to the books collection
+  /{title}:
+    displayName: getBook
+    get:
+      description: Returns the specified book
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                {
+                  "title" : "Moby Dick",
+                  "author" : "The Author"
+                }
+    delete:
+      description: Deletes the specified book
