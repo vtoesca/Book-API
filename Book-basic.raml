@@ -12,11 +12,21 @@ version: 1
           body:
             application/json:
               example: |
-                {
+                [{
                   "id" : "ISBN",
                   "title" : "Moby Dick",
                   "author" : "The Author"
-                }
+                },
+                {
+                  "id" : "ISBN",
+                  "title" : "Moby second",
+                  "author" : "The Author"
+                },
+                {
+                  "id" : "ISBN",
+                  "title" : "Moby third",
+                  "author" : "The Author"
+                }]
 
   /{title}:
     displayName: getBook
