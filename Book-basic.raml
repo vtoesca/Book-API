@@ -7,8 +7,17 @@ version: 1
   displayName: Books
   get:
     description: Returns a list of all books
-  post:
-    description: Adds a book to the books collection
+    responses:
+        200:
+          body:
+            application/json:
+              example: |
+                {
+                  "id" : "ISBN",
+                  "title" : "Moby Dick",
+                  "author" : "The Author"
+                }
+
   /{title}:
     displayName: getBook
     get:
