@@ -8,7 +8,7 @@ Find a good book!
 This simple sample provides a basic Book API option as well as a more advanced option as well.
 
 Use RAW link(s) for Creating Virtual APIs:
- - *Basic* Option - https://raw.githubusercontent.com/DevTestSolutions/Book-API/master/Book-basic.raml
- - *Advanced* Option - https://raw.githubusercontent.com/DevTestSolutions/Book-API/master/Book-advanced.raml
+ - *Basic Option* - https://raw.githubusercontent.com/DevTestSolutions/Book-API/master/Book-basic.raml
+ - *Advanced Option* - https://raw.githubusercontent.com/DevTestSolutions/Book-API/master/Book-advanced.raml
 
 Goto https://vapi.ca.com to create your own Link API from these sample files.
