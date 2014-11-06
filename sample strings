@@ -1,0 +1,10 @@
+OCLC - https://oclc.org/batchload/controlnumber.en.html
+  OCLC string {{=[::D*(7)]}}
+  
+ISBN Number - http://en.wikipedia.org/wiki/International_Standard_Book_Number
+  ISBN 10 String {{=[::D*(5)-D*(2)-D*(2)-D*(1)]}}
+  ISBN 13 String {{=[::978-D*(1)-D*(3)-D*(5)-D*(1)]}}
+
+First Name - {{=[:First Name:]}}
+Last Name - {{=[:Last Name:]}}
+Middle Initial - {{=[:Middle Initial:]}}
