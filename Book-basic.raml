@@ -13,19 +13,22 @@ version: 1
             application/json:
               example: |
                 [{
-                  "id" : "ISBN",
-                  "title" : "Moby Dick",
-                  "author" : "The Author"
+                  "idtype" : "OCLC",
+                  "id" : "9506808"
+                  "title" : "The Wonderful Wizard of Oz",
+                  "author" : "L. Frank Baum"
                 },
                 {
-                  "id" : "ISBN",
-                  "title" : "Moby second",
-                  "author" : "The Author"
+                  "idtype" : "OCLC",
+                  "id" : "236914",
+                  "title" : "Kim",
+                  "author" : "Rudyard Kipling"
                 },
                 {
-                  "id" : "ISBN",
-                  "title" : "Moby third",
-                  "author" : "The Author"
+                  "idtype" : "ISBN",
+                  "id" : "978-0-670-22026-7"
+                  "title" : "Christine",
+                  "author" : "Stephen King"
                 }]
 
   /{title}:
@@ -41,5 +44,3 @@ version: 1
                   "title" : "{title}",
                   "author" : "{{=[:First Name:]}} {{=[:Middle Initial:]}} {{=[:Last Name:]}}"
                 }
-    delete:
-      description: Deletes the specified book
