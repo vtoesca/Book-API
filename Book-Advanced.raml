@@ -1,0 +1,47 @@
+#%RAML 0.8
+
+baseUri: https://vapi.ca.com/
+version: 1
+
+/book:
+  displayName: Books
+  get:
+    description: Returns a list of all books
+    responses:
+        200:
+          body:
+            application/json:
+              example: |
+                [{
+                  "idtype" : "OCLC",
+                  "id" : "{{=[::D*(7)]}}
+"
+                  "title" : "The {{=[:City:]}} Travel Guide",
+                  "author" : "{{=[:Middle Initial:]}}. {{=[:First Name:]}} {{=[:Last Name:]}}"
+                },
+                {
+                  "idtype" : "OCLC",
+                  "id" : "{{=[::D*(7)]}}",
+                  "title" : "{{=[:First Name:]}}",
+                  "author" : "{{=[:First Name:]}} {{=[:Last Name:]}}"
+                },
+                {
+                  "idtype" : "ISBN",
+                  "id" : "{{=[::D*(3)-D*(1)-D*(3)-D*(5)-D*(1)]}}"
+                  "title" : "{{=[:First Name:]}}",
+                  "author" : "{{=[:First Name:]}} {{=[:Last Name:]}}"
+                }]
+
+  /{title}:
+    displayName: getBook
+    get:
+      description: Returns the specified book
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                {
+                  "title" : "{title}",
+                  "author" : "{{=[:First Name:]}} {{=[:Middle Initial:]}} {{=[:Last Name:]}}"
+                }
