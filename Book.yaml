@@ -12,9 +12,9 @@ paths:
     get:
       summary: Get a book by id
       parameters:
-        - name: {id}
+        - name: id
           in: path
-          description: The {id} of the book.
+          description: The id of the book.
           required: true
           type: string
       produces:
@@ -33,15 +33,15 @@ paths:
     get:
       summary: Search for a book
       parameters:
-        - name: {title}
+        - name: title
           in: query
           required: false
           type: string
-        - name: {author}
+        - name: author
           in: query
           required: false
           type: string
-        - name: {publisher}
+        - name: publisher
           in: query
           required: false
           type: string
