@@ -8,32 +8,13 @@ schemes:
 host: localhost:8000
 basePath: /
 paths:
-  /books/book:
-    post:
-      summary: Add a new book
-      parameters:
-        - name: title
-          in: query
-          required: true
-          type: string
-        - name: author
-          in: query
-          required: true
-          type: string
-        - name: publisher
-          in: query
-          required: true
-          type: string
-      responses:
-        200:
-          description: Success
   /books/{id}:
     get:
       summary: Get a book by id
       parameters:
-        - name: id
+        - name: {id}
           in: path
-          description: The id of the book.
+          description: The {id} of the book.
           required: true
           type: string
       produces:
@@ -52,15 +33,15 @@ paths:
     get:
       summary: Search for a book
       parameters:
-        - name: title
+        - name: {title}
           in: query
           required: false
           type: string
-        - name: author
+        - name: {author}
           in: query
           required: false
           type: string
-        - name: publisher
+        - name: {publisher}
           in: query
           required: false
           type: string
@@ -72,7 +53,7 @@ paths:
           examples:
             application/json: |-
               {
-                "title": "How to Avoid Huge Ships",
-                "author": "Captain John W. Trimmer",
-                "publisher": "Cornell Maritime Press"
+                "title": "{title}",
+                "author": "{author}",
+                "publisher": "{publisher}"
               }
